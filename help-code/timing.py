@@ -1,8 +1,7 @@
 # Author: John Landeholt [TA]
 from time import time
-
-def avg(l):
-    return sum(l) / len(l)
+import concurrent.futures
+import random
 
 def timing(f):
     """
@@ -11,15 +10,28 @@ def timing(f):
                     return 'YOUR RETURN'
     """
     def wrap(*args, **kw):
-        times = []
-        for _ in range(100):
-            ts = time()
-            f(*args)
-            te = time()
-            times.append(te-ts)
-        avg_time = avg(times) / 1e-3
-        min_time = min(times) / 1e-3
-        max_time = max(times) / 1e-3
-        return print(f'function {f.__name__} took: {round(avg_time,3)}ms   max: {round(max_time,3)}ms, min: {round(min_time,3)}ms')
+        times = 10000
+        ts = time()
+        future_list = []
+        with concurrent.futures.ThreadPoolExecutor(max_workers = 13) as executor:
+            for _ in range(times):
+                future_list.append(executor.submit(f, *args))
+            for fut in future_list:
+                res = fut.result()
+
+        te = time()
+        avg_time = ((te - ts) / times) / 1e-3
+        return print(f'function {f.__name__} took: {round(avg_time,3)}ms')
 
     return wrap
+
+@timing
+def linear_search(l, s):
+    for x in l:
+        if x == s: return x
+    return None
+
+if __name__ == '__main__':
+    l = list(range(100000))
+    random.shuffle(l)
+    linear_search(l,42)
