@@ -13,6 +13,7 @@ def timing(f):
         times = 10000
         ts = time()
         future_list = []
+        res = None
         with concurrent.futures.ThreadPoolExecutor(max_workers = 13) as executor:
             for _ in range(times):
                 future_list.append(executor.submit(f, *args))
@@ -21,7 +22,8 @@ def timing(f):
 
         te = time()
         avg_time = ((te - ts) / times) / 1e-3
-        return print(f'function {f.__name__} took: {round(avg_time,3)}ms')
+        print(f'function {f.__name__} took: {round(avg_time,3)}ms')
+        return res
 
     return wrap
 
