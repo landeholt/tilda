@@ -12,7 +12,7 @@ def timing(f):
     """
     def wrap(*args, **kw):
         times = []
-        for _ in range(10000):
+        for _ in range(100):
             ts = time()
             f(*args)
             te = time()
