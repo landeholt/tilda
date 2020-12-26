@@ -1,6 +1,7 @@
 import operator
 
 class Heap:
+    """Generic heap"""
     def __init__(self, max_size, compare = operator.lt):
         self.max_size = max_size
         self.array = [None]
@@ -11,6 +12,7 @@ class Heap:
         return self.size
     
     def __iadd__(self, other):
+        """ allows a heap to be extended with a new list """
         if len(other) > 0:
             for n in other:
                 self.insert(n)
@@ -23,11 +25,18 @@ class Heap:
         self.array[left], self.array[right] = self.array[right], self.array[left]
     
     def __bubble_up(self, idx):
+        """ When a item is inserted it gets 
+            inserted at the last index and then gets pushed up to its
+            correct position 
+        """
         while idx > 1 and not self.__comp(idx // 2, idx):
             self.__swap(idx // 2, idx)
             idx //= 2
 
     def __bubble_down(self, idx = 1):
+        """ When a item is removed the children of it gets 
+            pushed down to its correct position
+        """
         while 2 * idx <= len(self): 
             nidx = self.__nidx(idx)
             if not self.__comp(idx, nidx):
@@ -36,6 +45,9 @@ class Heap:
 
 
     def __nidx(self, idx):
+        """ Heap-condition: A parent [i] has children 2 * [i] and 2 * [i] + 1.
+            Returns the child with best priority
+        """
         if 2 * idx + 1 > len(self): return 2 * idx
         if self.__comp(2 * idx, 2 * idx + 1): return 2 * idx
         else: return 2 * idx + 1
