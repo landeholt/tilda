@@ -17,29 +17,28 @@ class Heap:
             return self
     
     def __comp(self, parent, child):
-        if self.array[parent] == None: return False
         return self.compare(self.array[parent], self.array[child])
 
     def __swap(self, left, right):
         self.array[left], self.array[right] = self.array[right], self.array[left]
     
-    def __bubble_up(self, child_idx):
-        while child_idx > 1:
-            parent_idx = child_idx // 2
-            if self.__comp(parent_idx, child_idx):
-                return
-            self.__swap(parent_idx, child_idx)
-            child_idx = parent_idx
+    def __bubble_up(self, idx):
+        while idx > 1 and not self.__comp(idx // 2, idx):
+            self.__swap(idx // 2, idx)
+            idx //= 2
 
-    def __bubble_down(self, parent_idx):
-        while 2 * parent_idx <= len(self): 
-            child_idx = 2 * parent_idx
-            if child_idx + 1 < len(self) and self.__comp(child_idx + 1, child_idx):
-                child_idx += 1
-            if self.__comp(parent_idx, child_idx):
-                return
-            self.__swap(parent_idx, child_idx)
-            parent_idx = child_idx
+    def __bubble_down(self, idx = 1):
+        while 2 * idx <= len(self): 
+            nidx = self.__nidx(idx)
+            if not self.__comp(idx, nidx):
+                self.__swap(idx, nidx)
+            idx = nidx
+
+
+    def __nidx(self, idx):
+        if 2 * idx + 1 > len(self): return 2 * idx
+        if self.__comp(2 * idx, 2 * idx + 1): return 2 * idx
+        else: return 2 * idx + 1
 
     @property
     def empty(self):
@@ -59,9 +58,9 @@ class Heap:
         if not self.empty:
             data = self.array[1]
             self.array[1] = self.array[len(self)]
-            self.array.pop()
             self.size -= 1
-            self.__bubble_down(1)
+            self.array.pop()
+            self.__bubble_down()
             return data
         return None
     
