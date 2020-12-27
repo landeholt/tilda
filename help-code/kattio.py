@@ -1,3 +1,4 @@
+# Author: John Landeholt [TA]
 from sys import stdin, stdout
 
 def get_formula():

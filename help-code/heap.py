@@ -1,3 +1,4 @@
+# Author: John Landeholt [TA]
 import operator
 
 class Heap:

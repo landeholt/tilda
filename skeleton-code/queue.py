@@ -1,3 +1,4 @@
+# Author: John Landeholt [TA]
 class Node:
     def __init__(self, data, next = None):
         self.data = data
@@ -43,10 +44,12 @@ class Queue:
 
     def push(self, element):
         """ Create a node, link it up, increment size """
+        # YOUR CODE HERE
         pass
     
     def pop(self):
         """ check if not empty, find next node, relink, decrement size, return data """
+        # YOUR CODE HERE
         pass
 
     def remove(self):
