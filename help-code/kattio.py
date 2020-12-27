@@ -2,10 +2,11 @@
 from sys import stdin, stdout
 
 def get_formula():
-    return stdin.readline()
+    return stdin.readline().strip()
 
 def get_formulas():
-    return stdin.readlines()
+    for line in stdin:
+        yield line.strip()
 
 def send(out):
-    stdout.write(str(out))
+    stdout.write(str(out) + '\n')
