@@ -1,1 +1,5 @@
 shared.py
+__pycache__/
+full_examples/
+.pytest_cache
+test_lab8.py
