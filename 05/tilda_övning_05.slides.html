@@ -14531,7 +14531,7 @@ div.jp-OutputPrompt {
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Kattio</span>
@@ -14560,10 +14560,10 @@ div.jp-OutputPrompt {
 <p><a href="https://github.com/landeholt/tilda/blob/main/help-code/test_lab8.py">testfil till lab 8 och 9</a></p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">YOUR_FILE</span> <span class="kn">import</span> <span class="n">YOUR_FUNCTION</span> <span class="k">as</span> <span class="n">f</span>
@@ -14602,6 +14602,20 @@ div.jp-OutputPrompt {
 </div>
 </div>
 
+</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest test_lab8.py
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 <div class="jp-Cell-outputWrapper">
 
 
@@ -14613,18 +14627,16 @@ div.jp-OutputPrompt {
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-2-1ee2399182aa&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> YOUR_FILE <span class="ansi-green-fg">import</span> YOUR_FUNCTION <span class="ansi-green-fg">as</span> f
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-red-fg"># from lab8 import formula as f</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-green-fg">import</span> pytest
-<span class="ansi-green-intense-fg ansi-bold">      4</span> 
-<span class="ansi-green-intense-fg ansi-bold">      5</span> @pytest.mark.parametrize(&#39;formula, expected&#39;, [
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.9.0, pytest-6.2.1, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/John/Documents/KTH/projects/stora-boken-om-nada
+collected 19 items                                                             
 
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;YOUR_FILE&#39;</pre>
+test_lab8.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">                                         [100%]</span>
+
+<span class="ansi-green-fg">============================== </span><span class="ansi-green-intense-fg ansi-bold">19 passed</span><span class="ansi-green-fg"> in 0.04s</span><span class="ansi-green-fg"> ==============================</span>
+</pre>
 </div>
 </div>
 
@@ -14632,24 +14644,10 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest test_lab8.py
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pytest test_lab8_wrong.py
@@ -14658,6 +14656,324 @@ div.jp-OutputPrompt {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold">============================= test session starts ==============================</span>
+platform darwin -- Python 3.9.0, pytest-6.2.1, py-1.10.0, pluggy-0.13.1
+rootdir: /Users/John/Documents/KTH/projects/stora-boken-om-nada
+collected 19 items                                                             
+
+test_lab8_wrong.py <span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-red-fg">F</span><span class="ansi-green-fg">.</span><span class="ansi-red-fg">F</span><span class="ansi-green-fg">.</span><span class="ansi-red-fg">F</span><span class="ansi-green-fg">.</span><span class="ansi-red-fg">F</span><span class="ansi-green-fg">.</span><span class="ansi-green-fg">.</span><span class="ansi-red-fg">F</span><span class="ansi-red-fg">F</span><span class="ansi-green-fg">.</span><span class="ansi-red-fg">F</span><span class="ansi-red-fg">F</span><span class="ansi-green-fg">.</span><span class="ansi-red-fg">                                   [100%]</span>
+
+=================================== FAILURES ===================================
+<span class="ansi-red-intense-fg ansi-bold">___________ test_formulas[C(Xx4)5-Ok\xe4nd atom vid rafdslutet 4)5] ____________</span>
+
+formula = &#39;C(Xx4)5&#39;, expected = &#39;Okänd atom vid rafdslutet 4)5&#39;
+
+    <span class="ansi-white-fg">@pytest</span>.mark.parametrize(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">formula, expected</span><span class="ansi-yellow-fg">&#39;</span>, [
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Si(C3(COOH)2)4(H2O)7</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na332</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(Xx4)5</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Okänd atom vid rafdslutet 4)5</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4)C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad siffra vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad högerdparentes vid radslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O)Fe</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet )Fe</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H0</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid fradslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H1C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H02C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vidd radslutet 2C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Nacl</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet cl</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">a</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet a</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">(Cl)2)3</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig grfuppstart vid radslutet )3</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">)</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppsdtart vid radslutet )</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">2</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet 2</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntdaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H111</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är dsyntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H110</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>)
+    ])
+    
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">test_formulas</span>(formula, expected):
+        cert = lab8_f(formula)
+&gt;       <span class="ansi-blue-intense-fg">assert</span> cert == expected
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert &#39;Okänd atom vid radslutet 4)5&#39; == &#39;Okänd atom v...afdslutet 4)5&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E         - Okänd atom vid rafdslutet 4)5</span>
+<span class="ansi-red-intense-fg ansi-bold">E         ?                  -</span>
+<span class="ansi-red-intense-fg ansi-bold">E         + Okänd atom vid radslutet 4)5</span>
+
+<span class="ansi-red-intense-fg ansi-bold">test_lab8_wrong.py</span>:30: AssertionError
+<span class="ansi-red-intense-fg ansi-bold">_________ test_formulas[C(OH4C-Saknad h\xf6gerdparentes vid radslutet] _________</span>
+
+formula = &#39;C(OH4C&#39;, expected = &#39;Saknad högerdparentes vid radslutet&#39;
+
+    <span class="ansi-white-fg">@pytest</span>.mark.parametrize(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">formula, expected</span><span class="ansi-yellow-fg">&#39;</span>, [
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Si(C3(COOH)2)4(H2O)7</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na332</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(Xx4)5</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Okänd atom vid rafdslutet 4)5</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4)C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad siffra vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad högerdparentes vid radslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O)Fe</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet )Fe</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H0</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid fradslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H1C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H02C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vidd radslutet 2C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Nacl</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet cl</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">a</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet a</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">(Cl)2)3</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig grfuppstart vid radslutet )3</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">)</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppsdtart vid radslutet )</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">2</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet 2</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntdaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H111</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är dsyntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H110</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>)
+    ])
+    
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">test_formulas</span>(formula, expected):
+        cert = lab8_f(formula)
+&gt;       <span class="ansi-blue-intense-fg">assert</span> cert == expected
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert &#39;Saknad höger...vid radslutet&#39; == &#39;Saknad höger...vid radslutet&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E         - Saknad högerdparentes vid radslutet</span>
+<span class="ansi-red-intense-fg ansi-bold">E         ?             -</span>
+<span class="ansi-red-intense-fg ansi-bold">E         + Saknad högerparentes vid radslutet</span>
+
+<span class="ansi-red-intense-fg ansi-bold">test_lab8_wrong.py</span>:30: AssertionError
+<span class="ansi-red-intense-fg ansi-bold">______________ test_formulas[H0-F\xf6r litet tal vid fradslutet] _______________</span>
+
+formula = &#39;H0&#39;, expected = &#39;För litet tal vid fradslutet&#39;
+
+    <span class="ansi-white-fg">@pytest</span>.mark.parametrize(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">formula, expected</span><span class="ansi-yellow-fg">&#39;</span>, [
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Si(C3(COOH)2)4(H2O)7</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na332</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(Xx4)5</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Okänd atom vid rafdslutet 4)5</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4)C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad siffra vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad högerdparentes vid radslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O)Fe</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet )Fe</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H0</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid fradslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H1C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H02C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vidd radslutet 2C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Nacl</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet cl</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">a</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet a</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">(Cl)2)3</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig grfuppstart vid radslutet )3</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">)</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppsdtart vid radslutet )</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">2</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet 2</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntdaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H111</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är dsyntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H110</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>)
+    ])
+    
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">test_formulas</span>(formula, expected):
+        cert = lab8_f(formula)
+&gt;       <span class="ansi-blue-intense-fg">assert</span> cert == expected
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert &#39;För litet tal vid radslutet&#39; == &#39;För litet tal vid fradslutet&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E         - För litet tal vid fradslutet</span>
+<span class="ansi-red-intense-fg ansi-bold">E         ?                   -</span>
+<span class="ansi-red-intense-fg ansi-bold">E         + För litet tal vid radslutet</span>
+
+<span class="ansi-red-intense-fg ansi-bold">test_lab8_wrong.py</span>:30: AssertionError
+<span class="ansi-red-intense-fg ansi-bold">____________ test_formulas[H02C-F\xf6r litet tal vidd radslutet 2C] ____________</span>
+
+formula = &#39;H02C&#39;, expected = &#39;För litet tal vidd radslutet 2C&#39;
+
+    <span class="ansi-white-fg">@pytest</span>.mark.parametrize(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">formula, expected</span><span class="ansi-yellow-fg">&#39;</span>, [
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Si(C3(COOH)2)4(H2O)7</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na332</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(Xx4)5</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Okänd atom vid rafdslutet 4)5</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4)C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad siffra vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad högerdparentes vid radslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O)Fe</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet )Fe</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H0</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid fradslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H1C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H02C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vidd radslutet 2C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Nacl</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet cl</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">a</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet a</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">(Cl)2)3</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig grfuppstart vid radslutet )3</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">)</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppsdtart vid radslutet )</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">2</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet 2</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntdaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H111</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är dsyntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H110</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>)
+    ])
+    
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">test_formulas</span>(formula, expected):
+        cert = lab8_f(formula)
+&gt;       <span class="ansi-blue-intense-fg">assert</span> cert == expected
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert &#39;För litet ta... radslutet 2C&#39; == &#39;För litet ta... radslutet 2C&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E         - För litet tal vidd radslutet 2C</span>
+<span class="ansi-red-intense-fg ansi-bold">E         ?                  -</span>
+<span class="ansi-red-intense-fg ansi-bold">E         + För litet tal vid radslutet 2C</span>
+
+<span class="ansi-red-intense-fg ansi-bold">test_lab8_wrong.py</span>:30: AssertionError
+<span class="ansi-red-intense-fg ansi-bold">_________ test_formulas[(Cl)2)3-Felaktig grfuppstart vid radslutet )3] _________</span>
+
+formula = &#39;(Cl)2)3&#39;, expected = &#39;Felaktig grfuppstart vid radslutet )3&#39;
+
+    <span class="ansi-white-fg">@pytest</span>.mark.parametrize(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">formula, expected</span><span class="ansi-yellow-fg">&#39;</span>, [
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Si(C3(COOH)2)4(H2O)7</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na332</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(Xx4)5</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Okänd atom vid rafdslutet 4)5</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4)C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad siffra vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad högerdparentes vid radslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O)Fe</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet )Fe</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H0</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid fradslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H1C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H02C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vidd radslutet 2C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Nacl</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet cl</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">a</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet a</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">(Cl)2)3</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig grfuppstart vid radslutet )3</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">)</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppsdtart vid radslutet )</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">2</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet 2</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntdaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H111</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är dsyntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H110</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>)
+    ])
+    
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">test_formulas</span>(formula, expected):
+        cert = lab8_f(formula)
+&gt;       <span class="ansi-blue-intense-fg">assert</span> cert == expected
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert &#39;Felaktig gru... radslutet )3&#39; == &#39;Felaktig grf... radslutet )3&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E         - Felaktig grfuppstart vid radslutet )3</span>
+<span class="ansi-red-intense-fg ansi-bold">E         ?            -</span>
+<span class="ansi-red-intense-fg ansi-bold">E         + Felaktig gruppstart vid radslutet )3</span>
+
+<span class="ansi-red-intense-fg ansi-bold">test_lab8_wrong.py</span>:30: AssertionError
+<span class="ansi-red-intense-fg ansi-bold">____________ test_formulas[)-Felaktig gruppsdtart vid radslutet )] _____________</span>
+
+formula = &#39;)&#39;, expected = &#39;Felaktig gruppsdtart vid radslutet )&#39;
+
+    <span class="ansi-white-fg">@pytest</span>.mark.parametrize(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">formula, expected</span><span class="ansi-yellow-fg">&#39;</span>, [
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Si(C3(COOH)2)4(H2O)7</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na332</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(Xx4)5</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Okänd atom vid rafdslutet 4)5</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4)C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad siffra vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad högerdparentes vid radslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O)Fe</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet )Fe</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H0</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid fradslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H1C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H02C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vidd radslutet 2C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Nacl</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet cl</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">a</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet a</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">(Cl)2)3</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig grfuppstart vid radslutet )3</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">)</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppsdtart vid radslutet )</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">2</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet 2</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntdaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H111</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är dsyntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H110</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>)
+    ])
+    
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">test_formulas</span>(formula, expected):
+        cert = lab8_f(formula)
+&gt;       <span class="ansi-blue-intense-fg">assert</span> cert == expected
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert &#39;Felaktig gru...d radslutet )&#39; == &#39;Felaktig gru...d radslutet )&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E         - Felaktig gruppsdtart vid radslutet )</span>
+<span class="ansi-red-intense-fg ansi-bold">E         ?                -</span>
+<span class="ansi-red-intense-fg ansi-bold">E         + Felaktig gruppstart vid radslutet )</span>
+
+<span class="ansi-red-intense-fg ansi-bold">test_lab8_wrong.py</span>:30: AssertionError
+<span class="ansi-red-intense-fg ansi-bold">______________ test_formulas[-Formeln \xe4r syntdaktiskt korrekt] ______________</span>
+
+formula = &#39;&#39;, expected = &#39;Formeln är syntdaktiskt korrekt&#39;
+
+    <span class="ansi-white-fg">@pytest</span>.mark.parametrize(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">formula, expected</span><span class="ansi-yellow-fg">&#39;</span>, [
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Si(C3(COOH)2)4(H2O)7</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na332</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(Xx4)5</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Okänd atom vid rafdslutet 4)5</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4)C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad siffra vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad högerdparentes vid radslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O)Fe</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet )Fe</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H0</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid fradslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H1C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H02C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vidd radslutet 2C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Nacl</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet cl</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">a</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet a</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">(Cl)2)3</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig grfuppstart vid radslutet )3</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">)</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppsdtart vid radslutet )</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">2</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet 2</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntdaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H111</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är dsyntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H110</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>)
+    ])
+    
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">test_formulas</span>(formula, expected):
+        cert = lab8_f(formula)
+&gt;       <span class="ansi-blue-intense-fg">assert</span> cert == expected
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert &#39;Formeln är s...tiskt korrekt&#39; == &#39;Formeln är s...tiskt korrekt&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E         - Formeln är syntdaktiskt korrekt</span>
+<span class="ansi-red-intense-fg ansi-bold">E         ?                -</span>
+<span class="ansi-red-intense-fg ansi-bold">E         + Formeln är syntaktiskt korrekt</span>
+
+<span class="ansi-red-intense-fg ansi-bold">test_lab8_wrong.py</span>:30: AssertionError
+<span class="ansi-red-intense-fg ansi-bold">____________ test_formulas[H111-Formeln \xe4r dsyntaktiskt korrekt] ____________</span>
+
+formula = &#39;H111&#39;, expected = &#39;Formeln är dsyntaktiskt korrekt&#39;
+
+    <span class="ansi-white-fg">@pytest</span>.mark.parametrize(<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">formula, expected</span><span class="ansi-yellow-fg">&#39;</span>, [
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Si(C3(COOH)2)4(H2O)7</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Na332</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(Xx4)5</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Okänd atom vid rafdslutet 4)5</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4)C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad siffra vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">C(OH4C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad högerdparentes vid radslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H2O)Fe</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet )Fe</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H0</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid fradslutet</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H1C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vid radslutet C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H02C</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">För litet tal vidd radslutet 2C</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Nacl</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet cl</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">a</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Saknad stor bokstav vid radslutet a</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">(Cl)2)3</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig grfuppstart vid radslutet )3</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">)</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppsdtart vid radslutet )</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">2</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Felaktig gruppstart vid radslutet 2</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntdaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H111</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är dsyntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>),
+        (<span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">H110</span><span class="ansi-yellow-fg">&#39;</span>, <span class="ansi-yellow-fg">&#39;</span><span class="ansi-yellow-fg">Formeln är syntaktiskt korrekt</span><span class="ansi-yellow-fg">&#39;</span>)
+    ])
+    
+    <span class="ansi-blue-intense-fg">def</span> <span class="ansi-green-intense-fg">test_formulas</span>(formula, expected):
+        cert = lab8_f(formula)
+&gt;       <span class="ansi-blue-intense-fg">assert</span> cert == expected
+<span class="ansi-red-intense-fg ansi-bold">E       AssertionError: assert &#39;Formeln är s...tiskt korrekt&#39; == &#39;Formeln är d...tiskt korrekt&#39;</span>
+<span class="ansi-red-intense-fg ansi-bold">E         - Formeln är dsyntaktiskt korrekt</span>
+<span class="ansi-red-intense-fg ansi-bold">E         ?            -</span>
+<span class="ansi-red-intense-fg ansi-bold">E         + Formeln är syntaktiskt korrekt</span>
+
+<span class="ansi-red-intense-fg ansi-bold">test_lab8_wrong.py</span>:30: AssertionError
+=========================== short test summary info ============================
+FAILED test_lab8_wrong.py::test_formulas[C(Xx4)5-Ok\xe4nd atom vid rafdslutet 4)5]
+FAILED test_lab8_wrong.py::test_formulas[C(OH4C-Saknad h\xf6gerdparentes vid radslutet]
+FAILED test_lab8_wrong.py::test_formulas[H0-F\xf6r litet tal vid fradslutet]
+FAILED test_lab8_wrong.py::test_formulas[H02C-F\xf6r litet tal vidd radslutet 2C]
+FAILED test_lab8_wrong.py::test_formulas[(Cl)2)3-Felaktig grfuppstart vid radslutet )3]
+FAILED test_lab8_wrong.py::test_formulas[)-Felaktig gruppsdtart vid radslutet )]
+FAILED test_lab8_wrong.py::test_formulas[-Formeln \xe4r syntdaktiskt korrekt]
+FAILED test_lab8_wrong.py::test_formulas[H111-Formeln \xe4r dsyntaktiskt korrekt]
+<span class="ansi-red-fg">========================= </span><span class="ansi-red-intense-fg ansi-bold">8 failed</span>, <span class="ansi-green-fg">11 passed</span><span class="ansi-red-fg"> in 0.19s</span><span class="ansi-red-fg"> =========================</span>
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div></div></section></section><section><section>
@@ -14690,10 +15006,10 @@ div.jp-OutputPrompt {
 <p><strong>List exempel</strong>:</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">write_to_list</span><span class="p">(</span><span class="n">_list</span><span class="p">):</span>
@@ -14723,6 +15039,29 @@ div.jp-OutputPrompt {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+0 1 2 3 4 
+0 1 2 4 
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div></div></section><section>
@@ -14808,10 +15147,10 @@ Sillkremla &lt;BR&gt; &lt;/Q&gt; &lt;/Q&gt;
 <p>Ett trafikljus är en automat. Den har 4 <code>tillstånd</code>, där varje <code>tillstånd</code> har en unik lampa igång, om inte avstängd.Den har även en given följd, där om tillståndet är <strong>grön</strong>, så måste nästa input vara <strong>röd</strong>, annars har ett fel uppstått som gör att automaten sätts i en <code>evighetsloop</code> där <code>tillståndet</code> är <strong>gul</strong></p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Traffic light example as a automata</span>
@@ -14847,6 +15186,32 @@ Sillkremla &lt;BR&gt; &lt;/Q&gt; &lt;/Q&gt;
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-red-intense-fg">RED
+</span><span class="ansi-yellow-intense-fg">YELLOW
+</span><span class="ansi-green-intense-fg">GREEN
+</span><span class="ansi-yellow-intense-fg">YELLOW
+</span><span class="ansi-yellow-intense-fg">YELLOW
+</span><span class="ansi-yellow-intense-fg">YELLOW
+</span></pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div></div></section><section>
